@@ -110,7 +110,7 @@ textarea{
 }
 
 /* suppress hover effect on devices that don't support hover fully */
-@media (hover:none), (hover:on-demand) {
+@media (hover:none) {
     .caption{ 
         opacity: 1;
     }
