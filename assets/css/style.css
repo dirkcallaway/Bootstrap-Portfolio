@@ -105,10 +105,15 @@ textarea{
     float: left;
 }
 
-@media (hover:hover){
-.portfolioPics:hover .caption{
+.portfolioPics:hover .caption{ 
     opacity: 1;
 }
+
+/* suppress hover effect on devices that don't support hover fully */
+@media (hover:none), (hover:on-demand) {
+    .caption{ 
+        opacity: 1;
+    }
 }
 
 .clearfix::after{
