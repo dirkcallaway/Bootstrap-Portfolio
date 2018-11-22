@@ -1,10 +1,5 @@
-html{
-    position: relative;
-    min-height: 100%;
-}
-
 body{
-    margin-bottom:50px;
+    padding: 0;
 }
 .navbar{
     background-color: #ffffff;
@@ -29,13 +24,6 @@ body{
     border-radius:4px 4px 0 0;
 }
 
-#navLinks{
-    float: right;
-    padding: 5px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    margin-top: 25px;
-}
-
 #copyright{
     text-align: center;
     bottom:0;
@@ -45,19 +33,11 @@ body{
 }
 
 footer{
-    position: absolute;
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
-    height:75px;
+    height:50px;
     bottom: 0;
     width: 100%;
-    line-height: 50px;
-}
-
-#bigBox{
-    background-image: url("../images/terrazzo.png");
-    padding-top: 30px;
-    padding-bottom: 90px;
 }
 
 p{
@@ -108,22 +88,6 @@ textarea{
     border-radius: 4px;
 }
 
-button{
-    color:#ffffff;
-    background-color: #4aaaa5;
-    padding:10px 24px;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    border:none;
-    margin:0 0 15px 20px;
-    border-radius: 4px;
-}
-button:hover{
-    background-color: #623CE8;
-    cursor: pointer;
-}
-
 .caption{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#ffffff;
@@ -144,6 +108,11 @@ button:hover{
 .portfolioPics:hover .caption{
     opacity: 1;
 }
+
+@media (hover: none) {
+    .caption:{
+        opacity: 1;
+    }
 
 .clearfix::after{
     content:"";

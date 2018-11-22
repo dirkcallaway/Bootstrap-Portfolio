@@ -2,56 +2,97 @@
 <html lang="en-us">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta charset="UTF-8">
-    <title>Matt's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
+    <title>Matt Perroni's Portfolio</title>
 </head>
 
-<body>
+<body style="background-image: url(assets/images/topography.png)">
 
-    <div id="header"> <!--header-->
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light pb-0">
+        <div class="container">
+            <a id="nameTag" class="navbar-brand" href="#">Matt Perroni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div id="banner">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/matt-perroni-830186170/">
+                            <div class="d-inline-block"><i class="fab fa-linkedin fa-2x"></i></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/dirkcallaway">
+                            <div class="d-inline-block"><i class="fab fa-github-square fa-2x"></i></div>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="btn btn-dark my-2 my-sm-0 mr-3" href="index.html" type="link">About</a>
+                    <a class="btn btn-dark my-2 my-sm-0 mr-3" href="portfolio.html" type="link">Portfolio</a>
+                    <a class="btn btn-dark my-2 my-sm-0 mr-0" href="contact.html" type="link">Contact</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End NavBar-->
 
-            <h3 id="nameTag">Matt Perroni</h3>
+    <div id="mainContent" class="container p-0 mt-4 mb-3">
+        <!--main content box-->
+        <div clasw="row">
+            <div class="col-md-12">
+                <h2>Contact</h2>
+                <hr>
+            </div>
+        </div>
 
-            <p id="navLinks"><a href="index.html">About</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a></p>
-        
+        <div class="row">
+            <div class="col-md-12 pb-2">
+                <form>
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Jane Smith" autofocus="autofocus"><br>
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="jsmith@email.com"><br>
+                    <p>Message</p>
+                    <textarea name="message" rows=8></textarea>
+                </form>
+
+                <a class="btn btn-dark my-2 my-sm-0 ml-4" href=# type="link">Submit</a>
+            </div>
         </div>
     </div>
 
-    <div id="bigBox">
-        <div id="mainContent"> <!--main content box-->
+    <!--footer-->
+    <footer class="footer fixed-bottom">
 
-            <h2>Contact</h2>
-            <hr>
-            
-            <form>
-                <p>Name</p>
-                <input type="text" name="name" placeholder="Jane Smith" autofocus="autofocus"><br>
-                <p>Email</p>
-                <input type="text" name="email" placeholder="jsmith@email.com"><br>
-                <p>Message</p>
-                <textarea name="message" rows=10></textarea>
-            </form>
-
-            <button>Submit</button>
-
+        <div class="container">
+            <p id="copyright">Copyright &copy;</p>
         </div>
-    </div>
-
-    <footer> <!--footer-->
-
-        <p id="copyright">Copyright &copy;</p>
 
     </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </body>
-
-
 
 </html>
