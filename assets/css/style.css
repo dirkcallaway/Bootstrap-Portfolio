@@ -105,14 +105,11 @@ textarea{
     float: left;
 }
 
+@media (hover:hover){
 .portfolioPics:hover .caption{
     opacity: 1;
 }
-
-@media (hover: none) {
-    .caption:{
-        opacity: 1;
-    }
+}
 
 .clearfix::after{
     content:"";
